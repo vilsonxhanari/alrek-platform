@@ -12,6 +12,25 @@ class ProductSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        $products=[
+            [
+                'name' => '',
+                'details' => '',
+                'description' => '',
+                'brand' => '',
+                'price' => '',
+                'shipping_cost' => '',
+                'image_path' => ''
+            ],
+            [
+                'name' => '',
+                'details' => '',
+                'description' => '',
+                'brand' => '',
+                'price' => '',
+                'shipping_cost' => '',
+                'image_path' => ''
+            ]
+        ];
     }
 }
