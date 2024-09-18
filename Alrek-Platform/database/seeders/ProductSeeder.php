@@ -12,25 +12,30 @@ class ProductSeeder extends Seeder
      */
     public function run(): void
     {
-        $products=[
+        $products = [
             [
-                'name' => '',
-                'details' => '',
-                'description' => '',
-                'brand' => '',
-                'price' => '',
-                'shipping_cost' => '',
-                'image_path' => ''
+                'name' => 'Phone',
+                'details' => 'Vietnam',
+                'description' => 'Made in 2024 ',
+                'brand' => 'Apple',
+                'price' => 26.6,
+                'shipping_cost' => '5',
+                'image_path' => 'storage/img.php'
             ],
             [
-                'name' => '',
-                'details' => '',
-                'description' => '',
-                'brand' => '',
-                'price' => '',
-                'shipping_cost' => '',
-                'image_path' => ''
-            ]
+                'name' => 'Phone',
+                'details' => 'Vietnam',
+                'description' => 'Made in 2024 ',
+                'brand' => 'Apple',
+                'price' => 26.6,
+                'shipping_cost' => '5',
+                'image_path' => 'storage/img.php'
+            ],
         ];
+
+        foreach ($products as $key => $value) {
+
+            Product::create($value);
+        }
     }
 }
